@@ -9,6 +9,7 @@ import { OurmenuSectionComponent } from './ourmenu-section/ourmenu-section.compo
 import { BookingComponent } from './booking/booking.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,9 @@ export const routes: Routes = [
     {
         path: "login",
         component: LoginComponent
+    },
+    {
+        path: "admin",
+        component: AdminComponent
     }
 ];

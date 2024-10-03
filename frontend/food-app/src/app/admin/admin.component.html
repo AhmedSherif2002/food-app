@@ -1,3 +1,59 @@
 <div class="admin-panel">
-    
+    <h1>Admin dashboard</h1>
+    <div class="products-panel">
+        <h3 class="products-heading">Products</h3>
+        <div class="products-head">
+            <div>Title</div>
+            <div>Price</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <!-- <div>&nbsp;</div> -->
+            
+        </div>
+        <div class="products">
+            @for (item of products; track $index) {
+                <div class="product">
+                    <div>{{ item.title }}</div>
+                    <div>{{ item.price }}</div>
+                    <div><button class="modify">Modify</button></div>
+                    <div><button class="delete">Delete</button></div>
+                    <!-- <div><button class="more">More</button></div> -->
+                </div>
+            }
+            <div class="product">
+                <div>Product1</div>
+                <div>1230</div>
+                <div><button class="modify">Modify</button></div>
+                <div><button class="delete">Delete</button></div>
+                <!-- <div><button class="more">More</button></div> -->
+            </div>
+            <div class="product">
+                <div>Product1</div>
+                <div>1230</div>
+                <div><button class="modify">Modify</button></div>
+                <div><button class="delete">Delete</button></div>
+                <!-- <div><button class="more">More</button></div> -->
+            </div>
+            <div class="product add-product" (click)="showAddProduct($event)">
+                <div>
+                    +&nbsp;Add product
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg" [ngStyle]="{display: show}" (click)="abortAdding($event)"></div>
+    <div class="add-product-div" [ngStyle]="{display: show}">
+        <h3 class="add-head">Add product</h3>
+        <form class="add-product-form" (submit)="addProduct($event)">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" placeholder="Title">
+            <label for="price">Price (USD)</label>
+            <input type="number" min="0" name="price" id="price" placeholder="Price">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" placeholder="Description">
+            <p class="error-p">{{ error }}</p>
+            <input type="submit" value="Add Product">
+            <p class="success" [ngStyle]="{display: successMsg}">Product was added successfully</p>
+        </form>
+    </div>
 </div>

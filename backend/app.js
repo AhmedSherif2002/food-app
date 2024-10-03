@@ -1,4 +1,5 @@
 const { usersRoute } = require("./routes/usersRoute")
+const { productsRoute } = require("./routes/productsRoute");
 
 const express = require("express");
 
@@ -12,6 +13,7 @@ app.use(cors({
 app.use(express.json());
 
 app.use("/users", usersRoute)
+app.use("/products", productsRoute);
 
 app.listen(3000,(req,res)=>{
     console.log("Server is listening on port 3000");
