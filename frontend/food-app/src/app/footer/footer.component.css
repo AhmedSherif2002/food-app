@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #474747;
+    padding: 140px 100px 60px;
+    gap: 80px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.section-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.title{
+    color: #fff;
+    font-size: 32px;
+    font-family: playfair Display;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.description{
+    font-family: DM sans;
+    font-size: 16px;
+    color: #ADB29E;
+    width: 300px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-media>div{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AD343E;
+    cursor: pointer;
+}
+
+.section-two{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 120px;
+}
+
+.section-two>ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    /* align-items: center; */
+    gap: 20px;
+    list-style-type: none;
+    color: #DBDFD0;
+    font-family: DM sans;
+    font-size: 16px;
+}
+
+.section-two>ul>h3{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.section-two>ul>li{
+    cursor: pointer;
+}
+
+.section-three{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: DM sans;
+}
+
+.section-three p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.images-div{
+    display: flex;
+    gap: 15px;
+}
+
+.img{
+    width: 190px;
+    height: 170px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.copyright{
+    font-family: DM sans;
+    color: #ADB29E;
+    font-size: 16px;
+}

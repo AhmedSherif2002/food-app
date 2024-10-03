@@ -1,0 +1,83 @@
+.menu-main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 60px 150px;
+    gap: 65px;
+}
+
+.menu-header{
+    text-align: center;
+    font-family: playfair Display;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.menu-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 1.5px solid #DBDFD0;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.options-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.name{
+    text-align: center;
+    font-family: DM sans;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.description{
+    width: 200px;
+    text-align: center;
+    font-family: DM sans;
+    font-size: 16px;
+}
+
+.explore-btn{
+    background-color: transparent;
+    color: #AD343E;
+    /* background-color: red; */
+    padding: 20px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    font-family: DM sans;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.explore-btn:hover{
+    font-size: 17px;
+}

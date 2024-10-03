@@ -1,0 +1,11 @@
+<div class="signup">
+    <form action="" class="signup-form" (submit)="login($event)">
+        <label for="email">Email</label>
+        <input type="email" placeholder="email" id="email" name="email">
+        <label for="password">Password</label>
+        <input type="password" placeholder="password" id="password" name="password">
+        <p class="errorMessage">{{ error }}</p>
+        <input type="submit" value="Login">
+        <p>Don't have an account? <a routerLink="/signup">Signup</a></p>
+    </form>
+</div>

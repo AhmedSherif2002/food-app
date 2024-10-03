@@ -1,0 +1,134 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.upper{
+    display: flex;
+    background-color: #474747;
+    justify-content: space-between;
+    padding: 10px 90px;
+    z-index: 10;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 10px;
+}
+
+.contact>div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.social-media{
+    display: flex;
+    gap: 5px;
+}
+
+.social-media>div{
+    background-color: rgba(249, 249, 247,0.12);
+    /* opacity: 0.12; */
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.regBtn{
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 0px 9px;
+    background-color: #f4f4f4;
+    color: #000;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.regBtn:hover{
+    background-color: #AD343E;
+}
+
+.regBtn a{
+    text-decoration: none;
+    color: #000;
+}
+
+.regBtn:hover a{
+    color: #fff;
+}
+
+.lower{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo>span{
+    font-family: playfair Display;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.navbar>div{
+    font-family: DM sans;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 34px;
+    padding: 4px 16px;
+    color: #2C2F24;
+    transition: 0.4s;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #2C2F24;
+}
+
+.navbar>div:hover{
+    background-color: #DBDFD0;
+}
+
+.navbar>div.selected{
+    background-color: #DBDFD0;
+    
+}
+
+.book-btn{
+    background: none;
+    border: 2px solid #2C2F24;
+    border-radius: 118px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #182226;
+}

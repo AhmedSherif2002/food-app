@@ -1,0 +1,154 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.head .header{
+    text-align: center;
+    font-size: 100px;
+    font-family: playfair Display;
+    color: #2C2F24;
+}
+
+.para{
+    text-align: center;
+    width: 550px;
+    font-family: DM sans;
+    font-size: 18px;
+    color: #495460;
+}
+
+.options{
+    display: flex;
+    gap: 15px;
+}
+
+.options>button{
+    font-size: 16px;
+    color: #2C2F24;
+    font-weight: bold;
+    font-family: DM sans;
+    border: 1px solid #DBDFD0;
+    border-radius: 50px;
+    padding: 10px 30px;
+    background: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button.selected{
+    color: #fff !important;
+    background: #AD343E !important;
+}
+
+.options>button:hover{
+    background-color: #AD343E;
+    color: #fff;
+}
+
+.menu{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 1.5px solid #DBDFD0;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    font-family: DM sans;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    transform: translate(-2px,-2px);
+}
+
+.card img{
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.price{
+    color: #AD343E;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title{
+    font-weight: bold;
+    color: #2C2F24;
+    font-size: 20px;
+}
+
+.description{
+    width: 240px;
+    text-align: center;
+    color: #414536;
+    font-size: 16px;
+}
+
+.order-apps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 120px;
+    background-color: #F9F9F7;
+}
+
+.left{
+    font-family: playfair Display;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p1{
+    max-width: 345px;
+    font-size: 55px;
+    color: #2C2F24;
+    text-align: left;
+}   
+
+.p2{
+    max-width: 345px;
+    text-align: left;
+    color: #414536;
+    font-size: 16px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.apps-div{
+    display: flex;
+    gap: 24px;
+}
+
+.app-card{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
