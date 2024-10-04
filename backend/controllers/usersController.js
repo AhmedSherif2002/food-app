@@ -107,6 +107,25 @@ const getUser = async (req,res)=>{
     }
 }
 
+const logout = async (req,res)=>{
+    try{
+        const authHeader = req.headers.authorization;
+        console.log(authHeader);
+        if(!authHeader){
+            throw ("No user is logged in");
+        }
+
+        const token = authHeader.split(" ")[1];
+
+        const { user_id } = jwt.verify(token, "very_secret");
+        const user = await usersModel.findOne({ _id: user_id });
+        console.log(user);
+    }catch(e){
+        console.log(e)
+        errorHandler(res, e);
+    }
+}
+
 module.exports = {
     register,
     login,
