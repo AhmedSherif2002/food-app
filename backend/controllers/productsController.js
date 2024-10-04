@@ -29,8 +29,15 @@ const addProduct = async (req,res)=>{
 
 const getAllProducts = async (req,res)=>{
     try{
-        const products = await productsModel.find();
-        console.log(products);
+        const query = req.query;
+        let category = "";
+        if(Object.keys(query).length !== 0){
+            console.log(query);
+            console.log(query.category);
+            category = query.category;
+        }
+        const products = category === "" ? await productsModel.find():await productsModel.find({ category: category });
+        console.log("products: ",products);
         res.status(201).json({
             status: errorMsgs.SUCCESS,
             products

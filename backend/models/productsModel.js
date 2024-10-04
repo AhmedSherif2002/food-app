@@ -6,6 +6,7 @@ const schema = mongoose.Schema({
     title: String,
     description: String,
     price: Number,
+    category: String
 })
 
 const productsModel = mongoose.model("products",schema);
