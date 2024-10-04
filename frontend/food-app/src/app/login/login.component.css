@@ -35,6 +35,7 @@
     background-color: #AD343E;
     color: #fff;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .errorMessage{

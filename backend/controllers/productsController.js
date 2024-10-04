@@ -41,7 +41,52 @@ const getAllProducts = async (req,res)=>{
     }
 }
 
+const deleteProduct = async (req,res)=>{
+    try{
+        const product_id = req.params.id;
+        console.log(product_id);
+        const result = await productsModel.deleteOne({ _id:product_id });
+        console.log(result);
+        res.status(201).json({
+            status: errorMsgs.SUCCESS
+        })
+    }catch(err){
+        console.log(err);
+        errorHandler(res,err);
+    }
+}
+
+const updateProduct = async (req, res)=>{
+    try{
+        const product_id = req.params.id;
+        const product = req.body;
+        if(product.title === ""){
+            throw ("Title is required");
+        } 
+        if(product.price === ""){
+            throw ("Price is required");   
+        }
+        console.log(product_id, product);
+        const result = await productsModel.updateOne({ _id:product_id }, 
+            { 
+                title: product.title,
+                description: product.description,
+                price: product.price
+            }
+        );
+        console.log(result);
+        res.status(201).json({
+            status: errorMsgs.SUCCESS
+        })
+    }catch(err){
+        console.log(err);
+        errorHandler(res,err);
+    }
+}
+
 module.exports = {
     addProduct,
-    getAllProducts
+    getAllProducts,
+    deleteProduct,
+    updateProduct
 }

@@ -55,18 +55,58 @@
     border: none;
     cursor: pointer;
     transition: 0.5s ease all;
+    background-color: #AD343E;
 }
 
 .regBtn:hover{
-    background-color: #AD343E;
+    background-color: #fff;
+    /* background-color: #851a23; */
 }
 
 .regBtn a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 .regBtn:hover a{
+    color: #000;
+}
+
+.loginBtn{
+    background-color: #ddd;
+}
+
+.loginBtn a{
+    color: #000;
+}
+
+.loginBtn:hover{
+    background-color: #AD343E;
+}
+
+.loginBtn:hover a{
+    color: #fff;
+}
+
+.profile{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.profile a{
+    text-decoration: none;
+    color: #222;
+    font-size: 20px;
+}
+
+.profile:hover{
+    background-color: #AD343E;
+}
+
+.profile:hover a{
     color: #fff;
 }
 

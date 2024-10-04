@@ -86,7 +86,29 @@ const login = async (req,res)=>{
     }
 }
 
+const getUser = async (req,res)=>{
+    try{
+        const token = req.headers.authorization.split(" ")[1];
+        if(!token){
+            throw ("User is not logged in");
+        }
+        const { user_id } = jwt.verify(token, "very_secret");
+        console.log(user_id);
+        const user = await usersModel.findOne({ _id: user_id }).select({ password:0 }); 
+        // delete user.password;
+        console.log(user);
+        res.status(200).json({
+            status: "success",
+            user: user
+        })
+    }catch(err){
+        console.log(err);
+        errorHandler(res,err);
+    }
+}
+
 module.exports = {
     register,
-    login
+    login,
+    getUser
 }
