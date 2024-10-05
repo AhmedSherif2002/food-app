@@ -78,7 +78,8 @@ const updateProduct = async (req, res)=>{
             { 
                 title: product.title,
                 description: product.description,
-                price: product.price
+                price: product.price,
+                category: product.category
             }
         );
         console.log(result);
